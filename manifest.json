@@ -6,7 +6,7 @@
   "manifestVersion": 1,
   "target": "web",
   "entry": "index.js",
-  "resources": [],
+  "resources": ["stream"],
   "types": ["movie", "series"],
   "settings": [
     {
