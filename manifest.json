@@ -1,13 +1,13 @@
 {
-  "id": "tmdb-watch-providers",
-  "name": "TMDB Watch Providers",
-  "version": "1.0.0",
-  "description": "Mostrar dónde ver (Filmin, Netflix, etc.) usando TMDB.",
   "manifestVersion": 1,
-  "target": "web",
-  "entry": "index.js",
+  "id": "tmdb-watch-providers",
+  "version": "1.0.0",
+  "name": "TMDB Watch Providers",
+  "description": "Mostrar dónde ver (Filmin, Netflix, etc.) usando TMDB.",
   "resources": ["stream"],
   "types": ["movie", "series"],
+  "idPrefixes": [],
+  "entry": "index.js",
   "settings": [
     {
       "key": "tmdbApiKey",
