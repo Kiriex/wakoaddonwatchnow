@@ -6,9 +6,9 @@
   "description": "Mostrar dónde ver (Filmin, Netflix, etc.) usando TMDB.",
   "author": "TuNombre",
   "actions": ["movies", "shows"],
-  "entryPointV3": "https://wakoaddonwatchnow.netlify.app/index.js",
+  "entryPointV3": "https://wakoaddonwatchnow.netlify.app/src/index.js",
   "languages": {
-    "en": "https://wakoaddonwatchnow.netlify.app/i18n/en.json"
+    "en": "https://wakoaddonwatchnow.netlify.app/src/i18n/en.json"
   },
   "changeLogs": {
     "1.0.0": "Primera versión"
