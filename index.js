@@ -15,12 +15,11 @@ async function fetchProviders(kind, tmdbId, apiKey, region) {
   return data.results?.[region] || null;
 }
 
-registerActionHandler("movies", async (ctx) => {
+async function handleAction(ctx, kind) {
   const apiKey = getSetting("tmdbApiKey");
   const region = (getSetting("region", "ES") || "ES").toUpperCase();
 
   const tmdbId = ctx.ids?.tmdb || ctx.tmdbId;
-  const kind = "movie";
   if (!apiKey || !tmdbId) return;
 
   const providers = await fetchProviders(kind, tmdbId, apiKey, region);
@@ -39,4 +38,9 @@ registerActionHandler("movies", async (ctx) => {
         .join("")}
     </div>`
   };
-});
+}
+
+registerActionHandler("movies", (ctx) => handleAction(ctx, "movie"));
+registerActionHandler("shows", (ctx) => handleAction(ctx, "tv"));
+
+console.log("TMDB Watch Providers loaded");
