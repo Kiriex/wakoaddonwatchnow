@@ -3,8 +3,11 @@
   "name": "TMDB Watch Providers",
   "version": "1.0.0",
   "description": "Mostrar dónde ver (Filmin, Netflix, etc.) usando TMDB.",
-  "actions": ["movies", "shows"],
+  "manifestVersion": 1,
+  "target": "web",
   "entry": "index.js",
+  "resources": [],
+  "types": ["movie", "series"],
   "settings": [
     {
       "key": "tmdbApiKey",
@@ -20,4 +23,3 @@
     }
   ]
 }
-
