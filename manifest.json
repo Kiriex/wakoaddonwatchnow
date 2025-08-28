@@ -1,0 +1,16 @@
+{
+  "$schema": "https://raw.githubusercontent.com/wako-app/mobile-sdk/master/dist/manifest-schema.json",
+  "version": "1.0.0",
+  "id": "tmdb-watch-providers",
+  "name": "TMDB Watch Providers",
+  "description": "Mostrar dónde ver (Filmin, Netflix, etc.) usando TMDB.",
+  "author": "TuNombre",
+  "actions": ["movies", "shows"],
+  "entryPointV3": "https://TU-DOMINIO-NETLIFY.netlify.app/index.js",
+  "languages": {
+    "en": "https://TU-DOMINIO-NETLIFY.netlify.app/i18n/en.json"
+  },
+  "changeLogs": {
+    "1.0.0": "Primera versión"
+  }
+}
