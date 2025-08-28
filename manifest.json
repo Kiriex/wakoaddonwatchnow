@@ -1,25 +1,16 @@
 {
-  "manifestVersion": 1,
-  "id": "tmdb-watch-providers",
+  "$schema": "https://raw.githubusercontent.com/wako-app/mobile-sdk/master/dist/manifest-schema.json",
   "version": "1.0.0",
+  "id": "tmdb-watch-providers",
   "name": "TMDB Watch Providers",
   "description": "Mostrar dónde ver (Filmin, Netflix, etc.) usando TMDB.",
-  "resources": ["stream"],
-  "types": ["movie", "series"],
-  "idPrefixes": [],
-  "entry": "index.js",
-  "settings": [
-    {
-      "key": "tmdbApiKey",
-      "type": "text",
-      "label": "TMDB API Key",
-      "required": true
-    },
-    {
-      "key": "region",
-      "type": "text",
-      "label": "Región",
-      "default": "ES"
-    }
-  ]
+  "author": "TuNombre",
+  "actions": ["movies", "episodes"],
+  "entryPointV3": "https://wakoaddonwatchnow.netlify.app/index.js",
+  "languages": {
+    "en": "https://wakoaddonwatchnow.netlify.app/i18n/en.json"
+  },
+  "changeLogs": {
+    "1.0.0": "Primera versión"
+  }
 }
