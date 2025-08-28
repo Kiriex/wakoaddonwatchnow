@@ -2,13 +2,22 @@
   "id": "tmdb-watch-providers",
   "name": "TMDB Watch Providers",
   "version": "1.0.0",
-  "description": "Muestra dónde ver (Filmin, Netflix, etc.) usando TMDB /watch/providers.",
-  "author": "Kiriex",
-  "icon": "https://www.themoviedb.org/assets/2/v4/logos/312x276-powered-by-rectangle-green-7e0b78b8e2d.png",
+  "description": "Mostrar dónde ver (Filmin, Netflix, etc.) usando TMDB.",
   "actions": ["movies", "shows"],
   "entry": "index.js",
   "settings": [
-    { "key": "tmdbApiKey", "type": "text", "label": "TMDB API Key", "required": true },
-    { "key": "region", "type": "text", "label": "Región (ISO 3166-1)", "default": "ES" }
+    {
+      "key": "tmdbApiKey",
+      "type": "text",
+      "label": "TMDB API Key",
+      "required": true
+    },
+    {
+      "key": "region",
+      "type": "text",
+      "label": "Región",
+      "default": "ES"
+    }
   ]
 }
+
