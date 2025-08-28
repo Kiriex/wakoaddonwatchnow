@@ -1,6 +1,5 @@
-import { registerActionHandler } from "@wako-app/mobile-sdk";
-
 const pluginId = "tmdb-watch-providers";
+const { registerActionHandler } = wako; // Wako inyecta esto
 
 function getSetting(key, fallback) {
   const settings = JSON.parse(localStorage.getItem(pluginId)) || {};
